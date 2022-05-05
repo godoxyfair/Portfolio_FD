@@ -1,9 +1,6 @@
 let b = document.querySelector('.window');
 
-let d = document.querySelector('.hamburger');
 
-let c = document.getElementById("closeNavig");
-let k = document.getElementById("mobNavig");
 
 function mypPopClick(){
     b.style.visibility = 'visible';
@@ -15,13 +12,12 @@ function mypPopClose(){
     b.style.opacity = '0';
 }
 
-function menuClick() {
-    d.style.display = 'flex';
-    k.style.display = 'none';
-    c.style.display = 'flex';
-}
-
-function menuClose() {
-    c.style.display = 'none';
-    d.style.display = 'none';
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
 }

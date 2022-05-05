@@ -4,38 +4,30 @@
     <meta charset="utf-8">
     <title>My portfolio!</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<header class="header">
-    <button id="mobNavig" onclick="menuClick()" type="button">
-        <div><img src="img.png" alt="mobNavig" width="50px" height="50px"></div>
-    </button>
-    <button id="closeNavig" onclick="menuClose()" type="button">
-        <div><img src="img_1.png" alt="mobNavig" width="50px" height="50px"></div>
-    </button>
-    <div class="hamburger">
-        <div class="navelem"><a href="#home">Home</a></div>
-        <div class="navelem"><a href="#about">About Me</a></div>
-        <div class="navelem"><a href="#portfolio">Portfolio</a></div>
-        <div class="navelem"><a href="#contacts">Contacts</a></div>
-    </div>
-<div class="navigation">
+<!--<header class="header">-->
+<div class="topnav" id="myTopnav">
     <nav>
         <ol>
-            <li id="listhome"><a href="#home">Home</a></li>
+            <li id="listhome"><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li id="listcontact"><a href="#contacts">Contacts</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </ol>
     </nav>
 </div>
-</header>
+<!--</header>-->
 
-<div class="myName">
+<div>
     <section id="home"><h1>Marta Igumenova,</br> Front-end Developer</h1></section>
 </div>
 
-<div class="aboutFlex">
+<div class="about">
     <section id ="about"><h2>About me</h2></section>
     <div><p id="aboutImagine"><img src ="https://www.aquariumofpacific.org/images/exhibits/Magnificent_Tree_Frog_900.jpg" alt = "frog" height="350" width="600"></p></div>
     <div class="aboutText">
