@@ -12,9 +12,14 @@ body {
     left: 0;
     right: 0;
     /*write here*/
-    position: fixed;}/*зафиксировали шапку*/
+    position: fixed;
+    z-index: 1;
+}/*зафиксировали шапку*/
 
-
+p {
+    font-size: 14pt;
+    color: #f9f9f9;
+}
 /*
 .header {
     height: 50px;
@@ -24,7 +29,7 @@ body {
 
 .topnav {
     overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
+     /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
 }
@@ -79,18 +84,46 @@ This class makes the topnav look good on small screens (display the links vertic
 
     }
 }
-h1 {
 
+#home {
+    width: 100vw;
+    height: 100vh;
+}
+
+#about {
+    width: 100vw;
+    height: 100vh;
+}
+
+#portfolio {
+    width: 100vw;
+    height: 100vh;
+}
+
+#contacts {
+    width: 100vw;
+    height: 100vh;
+}
+
+#oneHome {
+    position: relative;
+    top: 70vh;
+    left: 10vw;
+    font-size: 25pt;
+}
+h1 {
+    position: relative;
+    top: 70vh;
     font-size: 40pt;
     color: #f9f9f9;
-    margin-top: 70vh;
     margin-left: 10vw;
 
 }
 
+
 h2 {
-    font-size: 20pt;
+    font-size: 40pt;
     color: #f9f9f9;
-    margin-top: 20vh;
-    margin-left: 50vw;
+    position: relative;
+    left: 50vw;
 }
