@@ -93,11 +93,13 @@ This class makes the topnav look good on small screens (display the links vertic
 #about {
     width: 100vw;
     height: 100vh;
+    background-color: #3b444b;
 }
 
 #portfolio {
     width: 100vw;
     height: 100vh;
+    background-color: #232b2b;
 }
 
 #contacts {
@@ -106,31 +108,30 @@ This class makes the topnav look good on small screens (display the links vertic
 }
 
 #oneHome {
-    position: relative;
-    top: 70vh;
+    position: absolute;
+    top: 65vh;
     left: 10vw;
     font-size: 25pt;
 }
 h1 {
-    position: relative;
+    position: absolute;
     top: 70vh;
     font-size: 40pt;
     color: #f9f9f9;
-    margin-left: 10vw;
-
+    left: 10vw;
+    width: auto;
 }
 
+h2 { top: 115vh; }
 
-h2 {
+h3 { top: 215vh; }
+
+h4 { top: 315vh; }
+
+h2, h3, h4 {
     font-size: 40pt;
     color: #f9f9f9;
-    position: relative;
+    position: absolute;
     left: 50vw;
-}
-
-h3 {
-    font-size: 40pt;
-    color: #f9f9f9;
-    position: relative;
-    left: 50vw;
+    transform: translate(-50%, -50%);
 }
