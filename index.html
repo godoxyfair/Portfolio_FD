@@ -31,7 +31,7 @@
 <section id ="about">
 <div class="about">
     <h2>About me</h2>
-    <div><p id="aboutImagine"><img src ="https://www.aquariumofpacific.org/images/exhibits/Magnificent_Tree_Frog_900.jpg" alt = "frog" height="350" width="600"></p></div>
+    <div><p id="aboutImg"><img src ="https://www.aquariumofpacific.org/images/exhibits/Magnificent_Tree_Frog_900.jpg" alt = "frog" height="350" width="600"></p></div>
     <div class="aboutText">
         <p id="hiAbout">Hi, I am Marta. I have been jun js developer.</p>
         <p>I learn JS 3 weeks. </p>
@@ -43,30 +43,36 @@
 <section id ="portfolio">
 <div class="portfolio">
     <div class="headportfolio"><h3>Portfolio</h3></div>
-    <div class="flashing1"><img id="imgproject1" src="project1.png" alt ="map" height="200" width="400"/></div>
-    <div><button class= "open-window" onclick="mypPopClick()" type="button">About Flashcards</button></div>
-    <div class="window">
-        <div class="popup">
-            <button class="close" title="Закрыть окно" onclick="mypPopClose()"></button>
-            <p class="zag">Модальное окно</p>
-            <p>Мяумяумяумяу</p>
-            <p>руруруруурур</p>
-            <p>(((((((</p>
-        </div>
+    <div>
+        <section id="slider">
+            <input type="radio" name="slider" id="s1">
+            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3" checked>
+            <input type="radio" name="slider" id="s4">
+            <input type="radio" name="slider" id="s5">
+
+            <label for="s1" id="slider1">
+                <img src="project1.png" alt="slider image" width="800" height="400">
+                <p><a class="prjctLink" style="color: white" href="https://html5css.ru/howto/howto_js_topnav_responsive.php">Flash Card</a></p>
+            </label>
+            <label for="s2" id="slider2">
+                <img src="project2.png" alt="slider image" width="800" height="400">
+                <p><a class="prjctLink" style="color: white" href="https://html5css.ru/howto/howto_js_topnav_responsive.php">Piano</a></p>
+            </label>
+            <label for="s3" id="slider3">
+                <img src="img_3.png" alt="slider image" width="800" height="400">
+                <p><a class="prjctLink" style="color: white" href="https://html5css.ru/howto/howto_js_topnav_responsive.php">Miner</a></p>
+            </label>
+            <label for="s4" id="slider4">
+                <img src="img_4.png" alt="slider image" width="800" height="400">
+                <p><a class="prjctLink" style="color: white" href="https://html5css.ru/howto/howto_js_topnav_responsive.php">Open Space</a></p>
+            </label>
+            <label for="s5" id="slider5">
+                <img src="img_4.png" alt="slider image" width="800" height="400">
+                <p><a class="prjctLink" style="color: white" href="https://html5css.ru/howto/howto_js_topnav_responsive.php">WebSite Cafe</a></p>
+            </label>
+        </section>
     </div>
-    <div class="flashing3"><p>Flashcards</p></div>
-    <div class="flashing2"><img id="imgproject2" src="project2.png" height="200" alt ="piano" width="400"/></div>
-    <div><button onclick="mypPopClick()" type="button">About VPiano</button></div>
-    <div class="window">
-        <div class="popup">
-            <button class="close" title="Закрыть окно" onclick="mypPopClose()"></button>
-            <p class="zag">Модальное окно</p>
-            <p>Мяумяумяумяу</p>
-            <p>руруруруурур</p>
-            <p>(((((((</p>
-        </div>
-    </div>
-    <div class="flashing4"><p>Virtual Piano</p></div>
 </div>
 </section>
 <section id ="contacts">
@@ -76,15 +82,15 @@
         <p>You can contact me <a href="mailto:maigumenova@gmail.com">maigumenova@gmail.com</a></p>
         <p>or phone number<a href="tel:+79776412167">+7(977)641-21-67</a></p>
     </div>
-    <a href="https://github.com/godoxyfair"><img src="github.svg" alt="GitHub" height="87" width="87"></a>
-    <a href="https://www.facebook.com/profile.php?id=100045231307108"><img src="facebook.svg" alt="Facebook" height="87" width="87"></a>
+    <a href="https://github.com/godoxyfair"><img id="git" src="git-png.png" alt="GitHub" height="87" width="87"></a>
+    <a href="https://www.facebook.com/profile.php?id=100045231307108"><img id="facebook" src="facebook-png.png" alt="Facebook" height="87" width="87"></a>
 </div>
 </section>
 <script src="script.js"></script>
 </body>
 
 <footer>
-    <p id="footertext">This is end of site. But yoy can grow up.</p>
+    <p id="footertext">Made 2022</p>
 </footer>
 
 
