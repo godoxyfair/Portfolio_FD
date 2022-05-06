@@ -13,7 +13,7 @@ body {
     right: 0;
     /*write here*/
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }/*зафиксировали шапку*/
 
 p {
@@ -119,6 +119,8 @@ This class makes the topnav look good on small screens (display the links vertic
     top: 20vh;
     right: 10vw;
     opacity: 60%;
+    z-index: 0;
+
 }
 h1 {
     position: absolute;
@@ -127,6 +129,7 @@ h1 {
     color: #f9f9f9;
     left: 10vw;
     width: auto;
+    z-index: 1;
 }
 
 h1 {
@@ -156,6 +159,12 @@ h2, h3, h4 {
     left: 55vw;
 }
 
+@media screen and (max-width: 900px) {
+    #aboutImg {
+        visibility: hidden;
+    }
+}
+
 .aboutText {
 
     position: absolute;
@@ -166,6 +175,20 @@ h2, h3, h4 {
 
 }
 
+@media screen and (max-width: 900px) {
+    .portfolio {
+        visibility: hidden;
+    }
+    #hidePortf {
+
+        visibility: visible;
+        position: absolute;
+        top: 220vh;
+        text-align: center;
+        font-size: 30pt;
+        color: yellowgreen;
+    }
+}
 [type = radio] {
     display: none;
 }
@@ -260,7 +283,7 @@ transform: translate3d(0, 0, 0);
 
     position: relative;
     top: 60vh;
-    left: 50vw;
+    left: 49vw;
     transform: translate(-50%, -50%);
 }
 
