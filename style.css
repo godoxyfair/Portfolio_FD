@@ -49,7 +49,7 @@ a {text-decoration: none;}
     font-size: 14pt;
 }
 
-.topnav a:hover {background: #232b2b}/*подсветка при наведении*/
+.topnav a:hover {background: yellowgreen; opacity: 90%; color: #0e1111}/*подсветка при наведении*/
 
 .topnav .icon {
     display: none;
@@ -113,6 +113,13 @@ This class makes the topnav look good on small screens (display the links vertic
     left: 10vw;
     font-size: 25pt;
 }
+
+#imgPreview {
+    position: absolute;
+    top: 20vh;
+    right: 10vw;
+    opacity: 60%;
+}
 h1 {
     position: absolute;
     top: 70vh;
@@ -120,6 +127,13 @@ h1 {
     color: #f9f9f9;
     left: 10vw;
     width: auto;
+}
+
+h1 {
+
+    background: linear-gradient(45deg, yellowgreen 33%, greenyellow 66%, #f9f9f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h2 { top: 115vh; }
@@ -207,12 +221,15 @@ transform: translate3d(0, 0, 0);
 }
 
 .prjctLink {
-
     position: relative;
-    left: 50%;
     transform: translate(-50%, -50%);
     text-decoration: none;
 }
+
+.label3D {
+    text-align: center;
+}
+
 
 .contactme {
 
@@ -226,7 +243,12 @@ transform: translate3d(0, 0, 0);
 
 }
 
+.contactLink {
+    color: yellowgreen;
+}
+
 #git {
+
     position: relative;
     top: 60vh;
     left: 45vw;
@@ -235,6 +257,7 @@ transform: translate3d(0, 0, 0);
 }
 
 #facebook {
+
     position: relative;
     top: 60vh;
     left: 50vw;
@@ -242,6 +265,7 @@ transform: translate3d(0, 0, 0);
 }
 
 footer {
+
     text-align: center;
     height: 10vh;
 }
