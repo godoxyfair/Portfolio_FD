@@ -64,9 +64,36 @@ Show the link that contains should open and close the topnav (.icon) */
     }
 }
 
+@media handheld and (max-width: 900px) {
+    .topnav li:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
 This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 900px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+
+    }
+    .topnav.responsive  {
+        list-style-type: none;
+
+    }
+}
+
+@media handheld and (max-width: 900px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
         position: absolute;
@@ -165,6 +192,12 @@ h2, h3, h4 {
     }
 }
 
+@media handheld and (max-width: 900px) {
+    #aboutImg {
+        visibility: hidden;
+    }
+}
+
 .aboutText {
 
     position: absolute;
@@ -174,6 +207,7 @@ h2, h3, h4 {
     line-height: 2;
 
 }
+#hidePortf {visibility: hidden;}
 
 @media screen and (max-width: 900px) {
     .portfolio {
@@ -183,12 +217,28 @@ h2, h3, h4 {
 
         visibility: visible;
         position: absolute;
-        top: 220vh;
+        top: 240vh;
         text-align: center;
         font-size: 30pt;
         color: yellowgreen;
     }
 }
+
+@media handheld and (max-width: 900px) {
+    .portfolio {
+        visibility: hidden;
+    }
+    #hidePortf {
+
+        visibility: visible;
+        position: absolute;
+        top: 240vh;
+        text-align: center;
+        font-size: 30pt;
+        color: yellowgreen;
+    }
+}
+
 [type = radio] {
     display: none;
 }
