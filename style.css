@@ -104,11 +104,18 @@ This class makes the topnav look good on small screens (display the links vertic
         float: none;
         display: block;
         text-align: left;
+        color: #f9f9f9;
 
     }
     .topnav.responsive  {
         list-style-type: none;
+        text-decoration: none;
+        color: #f9f9f9;
 
+    }
+    .topnav.responsive li {
+        text-decoration: none;
+        color: #f9f9f9;
     }
 }
 
@@ -149,6 +156,31 @@ This class makes the topnav look good on small screens (display the links vertic
     z-index: 0;
 
 }
+
+@media screen and (max-width: 900px) {
+    #imgPreview {
+        position: absolute;
+        top: 20vh;
+        right: 50vw;
+        opacity: 60%;
+        z-index: 0;
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media handheld and (max-width: 900px) {
+    #imgPreview {
+        position: absolute;
+        top: 20vh;
+        right: 50vw;
+        opacity: 60%;
+        z-index: 0;
+        height: 300px;
+        width: 300px;
+    }
+}
+
 h1 {
     position: absolute;
     top: 70vh;
@@ -296,12 +328,15 @@ transform: translate3d(0, 0, 0);
 .prjctLink {
     position: relative;
     transform: translate(-50%, -50%);
-    text-decoration: none;
+
 }
 
 .label3D {
     text-align: center;
+    border-bottom: yellowgreen;
 }
+
+.label3D a:hover {background: yellowgreen; color: #0e1111;}/*подсветка при наведении*/
 
 
 .contactme {
